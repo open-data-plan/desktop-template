@@ -1,0 +1,3 @@
+{
+  "presets": ["@opd/babel-preset-app"]
+}
