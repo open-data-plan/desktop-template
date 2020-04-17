@@ -22,7 +22,7 @@
     "aerux-promise": "^1.0.2",
     "antd": "^4.1.1",
     "classnames": "^2.2.6",
-    "core-js": "^3.6.2",
+    "core-js": "^3.6.5",
     "flux-standard-action": "^2.1.1",
     "history": "^4.10.1",
     "is-promise": "^2.1.0",
