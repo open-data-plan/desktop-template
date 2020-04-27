@@ -28,7 +28,7 @@
     "is-promise": "^2.1.0",
     "path-to-regexp": "^6.1.0",
     "qs": "^6.9.3",
-    "rc-animate": "^2.10.3",
+    "rc-animate": "^2.11.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
