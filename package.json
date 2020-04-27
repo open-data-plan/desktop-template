@@ -25,7 +25,7 @@
     "core-js": "^3.6.2",
     "flux-standard-action": "^2.1.1",
     "history": "^4.10.1",
-    "is-promise": "^2.1.0",
+    "is-promise": "^3.0.0",
     "path-to-regexp": "^6.1.0",
     "qs": "^6.9.3",
     "rc-animate": "^2.10.3",
