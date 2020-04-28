@@ -17,7 +17,7 @@
   "author": "kagawagao <kingsongao1221@gmail.com> (https://kingsongao.com/)",
   "license": "MIT",
   "dependencies": {
-    "@ant-design/icons": "^4.0.5",
+    "@ant-design/icons": "^4.1.0",
     "aerux": "^4.1.3",
     "aerux-promise": "^1.0.2",
     "antd": "^4.1.1",
