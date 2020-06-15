@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@opd/jest-preset-pangu": "^1.4.0",
-    "@opd/pangu": "^1.4.0",
+    "@opd/pangu": "^1.4.1",
     "@types/redux": "^3.6.0",
     "react-test-renderer": "^16.13.1"
   },
