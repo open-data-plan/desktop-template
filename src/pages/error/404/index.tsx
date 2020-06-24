@@ -1,8 +1,8 @@
 import { Button, Result } from 'antd'
-import React from 'react'
+import React, { FC } from 'react'
 import { Link } from 'react-router-dom'
 
-const Exception404 = () => (
+const Exception404: FC = () => (
   <Result
     status="404"
     title="404"
