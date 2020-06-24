@@ -37,8 +37,8 @@
     "string-template": "^1.0.0"
   },
   "devDependencies": {
-    "@opd/jest-preset-pangu": "^1.4.1",
-    "@opd/pangu": "^1.4.1",
+    "@opd/jest-preset-pangu": "^1.5.0",
+    "@opd/pangu": "^1.5.1",
     "@types/redux": "^3.6.0",
     "react-test-renderer": "^16.13.1"
   },
@@ -58,5 +58,25 @@
   "prettier": "@opd/prettier-config-pangu",
   "config": {
     "libvips": "8.8.1"
+  },
+  "eslintConfig": {
+    "extends": "@opd/eslint-config-pangu"
+  },
+  "jest": {
+    "preset": "@opd/jest-preset-pangu"
+  },
+  "browserslist": [
+    "last 2 version",
+    "IE >= 11"
+  ],
+  "stylelint": {
+    "extends": [
+      "@opd/stylelint-config-pangu"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@opd/babel-preset-app"
+    ]
   }
 }

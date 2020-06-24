@@ -1,5 +1,0 @@
-{
-  "extends": [
-    "@opd/stylelint-config-pangu"
-  ]
-}

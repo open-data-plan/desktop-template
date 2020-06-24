@@ -1,6 +1,0 @@
-{
-  "extends": ["@opd/eslint-config-pangu"],
-  "rules": {
-    "@typescript-eslint/explicit-module-boundary-types": "off"
-  }
-}
