@@ -36,6 +36,7 @@ const routes: RouteConfig[] = [
       auth: false,
       title: 'Error Page',
       icon: <BugOutlined />,
+      visible: false,
     },
     routes: [
       {

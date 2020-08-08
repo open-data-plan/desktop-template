@@ -1,6 +1,5 @@
 import React, { ComponentType, FC, Suspense } from 'react'
 import { Redirect, Route, Router, Switch } from 'react-router-dom'
-import { hot } from 'react-hot-loader/root'
 import { MenuLayout as Layout } from '@/layouts'
 import PageLoading from '@/components/page-loading'
 import routes from '@/routes'
@@ -44,4 +43,4 @@ const App: FC<Props> = ({ history }) => (
   </Router>
 )
 
-export default hot(App)
+export default App

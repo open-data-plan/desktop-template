@@ -1,5 +1,4 @@
 import React from 'react'
-import { hot } from 'react-hot-loader/root'
 import { Button } from 'antd'
 
 const Home = () => {
@@ -11,4 +10,4 @@ const Home = () => {
   )
 }
 
-export default hot(Home)
+export default Home
