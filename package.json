@@ -19,7 +19,7 @@
   "dependencies": {
     "@ant-design/icons": "^4.2.1",
     "@opd/pangu": "^1.6.3",
-    "antd": "^4.2.5",
+    "antd": "^4.5.2",
     "classnames": "^2.2.6",
     "core-js": "^3.6.5",
     "path-to-regexp": "^6.1.0",
