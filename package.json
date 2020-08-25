@@ -18,7 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "@ant-design/icons": "^4.2.2",
-    "@opd/pangu": "^1.7.2",
+    "@opd/pangu": "^1.8.2",
     "antd": "^4.5.4",
     "classnames": "^2.2.6",
     "core-js": "^3.6.5",
