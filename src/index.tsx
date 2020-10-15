@@ -1,11 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Root from './root'
+import { register } from './service-worker'
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
-  })
-}
+register({
+  onSuccess: (registration) => {
+    console.log(registration)
+  },
+  onUpdate: (registration) => {
+    console.log(registration)
+  },
+})
 
 ReactDOM.render(<Root />, document.getElementById('root'))
