@@ -23,7 +23,7 @@
     "core-js": "^3.6.5",
     "path-to-regexp": "^6.2.0",
     "rc-animate": "^3.1.1",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-dom": "^16.13.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0"
