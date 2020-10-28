@@ -18,7 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "@ant-design/icons": "^4.2.2",
-    "antd": "^4.7.2",
+    "antd": "^4.7.3",
     "classnames": "^2.2.6",
     "core-js": "^3.6.5",
     "path-to-regexp": "^6.2.0",
@@ -29,12 +29,12 @@
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
-    "@opd/pangu": "^1.11.5",
+    "@opd/pangu": "^1.11.6",
     "@types/classnames": "^2.2.10",
     "@types/history": "^4.7.8",
     "@types/lodash": "^4.14.162",
-    "@types/react": "^16.9.53",
-    "@types/react-dom": "^16.9.8",
+    "@types/react": "^16.9.54",
+    "@types/react-dom": "^16.9.9",
     "@types/react-router": "^5.1.8",
     "@types/react-router-dom": "^5.1.6",
     "react-test-renderer": "^16.14.0"
