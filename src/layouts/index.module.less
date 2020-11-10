@@ -1,0 +1,28 @@
+@import '~antd/es/style/themes/default.less';
+
+.main-layout {
+  height: 100%;
+  overflow: auto;
+
+  &-content {
+    background: var(--body-background);
+    width: 100%;
+    overflow-x: auto;
+    flex: 1 0;
+    padding: 0;
+
+    &.has-sider {
+      padding-left: @padding-md;
+      padding-right: @padding-md;
+    }
+
+    &.has-header {
+      padding-top: @padding-md;
+      padding-bottom: @padding-md;
+    }
+  }
+
+  .no-header-sider {
+    height: 100vh;
+  }
+}

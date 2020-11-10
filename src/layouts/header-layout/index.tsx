@@ -1,49 +1,25 @@
-import React, { FC, useMemo } from 'react'
+import React, { FC } from 'react'
 import { Layout } from 'antd'
 import BasicHeader from '@/components/basic-header'
 import BasicFooter from '@/components/basic-footer'
 import SiderMenu from '@/components/sider-menu'
-import styles from './index.module.less'
-import { useLocation } from 'react-router'
-import flattenRoutes from '@/utils/flatten-routes'
-import { pathToRegexp } from 'path-to-regexp'
+import styles from '../index.module.less'
+import { getSearchParams } from '@/utils/helpers'
 import { SiderTheme } from 'antd/lib/layout/Sider'
-import { LayoutBaseProps } from '../types'
+import classNames from 'classnames'
+import useMatchedRoute from '@/hooks/use-matched-route'
+
+const searchParams = getSearchParams()
 
 const { Content } = Layout
 
-interface Props extends LayoutBaseProps {
+interface Props {
   siderWidth?: number
   theme?: SiderTheme
 }
 
-const HeaderLayout: FC<Props> = ({
-  children,
-  routes = [],
-  siderWidth = 200,
-  theme,
-}) => {
-  const { pathname } = useLocation()
-
-  const flattenedRoutes = useMemo(() => flattenRoutes(routes), [routes])
-
-  const route = useMemo(
-    () =>
-      flattenedRoutes.find((route) => {
-        if (!route.path) {
-          return false
-        } else if (Array.isArray(route.path)) {
-          route.path.some((path) => {
-            const regExp = pathToRegexp(path, [], {})
-            return regExp.test(pathname)
-          })
-        } else {
-          const regExp = pathToRegexp(route.path, [], {})
-          return regExp.test(pathname)
-        }
-      }) || {},
-    [flattenedRoutes, pathname]
-  )
+const HeaderLayout: FC<Props> = ({ children, siderWidth = 220, theme }) => {
+  const route = useMatchedRoute()
 
   const { meta = {} } = route
   const {
@@ -51,16 +27,39 @@ const HeaderLayout: FC<Props> = ({
     footer: Footer = BasicFooter,
     sider: Sider = SiderMenu,
   } = meta
+
+  const { header = 1, sider = 1, footer = 0 } = searchParams
+
+  const hideHeader = +header === 0
+  const hideSider = +sider === 0
+  const hideFooter = +footer === 0
+
+  const siderVisible = Sider && !hideSider
+  const headerVisible = Header && !hideHeader
+  // const footerVisible = Footer && !hideFooter
+
   return (
-    <Layout className={styles.menuLayout}>
-      {Header ? <Header /> : null}
+    <Layout className={styles.mainLayout}>
+      {Header && !hideHeader ? <Header /> : null}
       <Layout>
-        {Sider ? (
-          <Sider theme={theme} width={siderWidth} routes={routes} logo={null} />
+        {Sider && !hideSider ? (
+          <Sider
+            className={headerVisible ? undefined : styles.noHeaderSider}
+            theme={theme}
+            width={siderWidth}
+            logo={null}
+          />
         ) : null}
         <Layout>
-          <Content className={styles.menuLayoutContent}>{children}</Content>
-          {Footer ? <Footer /> : null}
+          <Content
+            className={classNames(styles.mainLayoutContent, {
+              [styles.hasHeader]: headerVisible,
+              [styles.hasSider]: siderVisible,
+            })}
+          >
+            {children}
+          </Content>
+          {Footer && !hideFooter ? <Footer /> : null}
         </Layout>
       </Layout>
     </Layout>

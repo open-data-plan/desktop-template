@@ -18,13 +18,39 @@
     margin-bottom: 0;
   }
 
+  &-center {
+    flex: 1;
+    padding: 0 @padding-lg;
+  }
+
   &-right {
     display: flex;
 
     .user-name {
+      color: @white;
+      display: inline-block;
       margin-left: 10px;
       user-select: none;
       cursor: pointer;
+      max-width: 120px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
+  }
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+
+  .user-name {
+    margin-left: 10px;
+    user-select: none;
+    cursor: pointer;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }

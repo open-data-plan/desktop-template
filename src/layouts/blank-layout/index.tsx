@@ -1,15 +1,19 @@
 import React, { FC, CSSProperties } from 'react'
-import { LayoutBaseProps } from '../types'
+import { Layout } from 'antd'
+import classnames from 'classnames'
+import styles from '../index.module.less'
 
-interface BlankLayoutProps extends LayoutBaseProps {
+interface BlankLayoutProps {
   className?: string
   style?: CSSProperties
 }
 
 const BlankLayout: FC<BlankLayoutProps> = ({ className, style, children }) => (
-  <div className={className} style={style}>
-    {children}
-  </div>
+  <Layout className={classnames(styles.mainLayout, className)} style={style}>
+    <Layout.Content className={styles.mainLayoutContent}>
+      {children}
+    </Layout.Content>
+  </Layout>
 )
 
 export default BlankLayout
