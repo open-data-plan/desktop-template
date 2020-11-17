@@ -29,7 +29,7 @@
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
-    "@opd/pangu": "^1.13.2",
+    "@opd/pangu": "^1.13.3",
     "@types/classnames": "^2.2.11",
     "@types/history": "^4.7.8",
     "@types/lodash": "^4.14.163",
