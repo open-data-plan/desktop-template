@@ -32,7 +32,7 @@
     "@opd/pangu": "^1.13.2",
     "@types/classnames": "^2.2.11",
     "@types/history": "^4.7.8",
-    "@types/lodash": "^4.14.163",
+    "@types/lodash": "^4.14.168",
     "@types/qs": "^6.9.5",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
