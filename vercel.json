@@ -1,6 +1,11 @@
 {
+  "version": 2,
+  "scope": "opd",
   "routes": [
     { "handle": "filesystem" },
     { "src": "/(.*)", "status": 404, "dest": "/index.html" }
-  ]
+  ],
+  "github": {
+    "enable": true
+  }
 }
