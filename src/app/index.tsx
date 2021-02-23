@@ -16,7 +16,7 @@ function renderComponent(Cmp: ComponentType | undefined, props: any) {
 
 const App: FC<Props> = ({ history }) => (
   <Router history={history}>
-    <Layout routes={routes}>
+    <Layout>
       <Suspense fallback={<PageLoading />}>
         <Switch>
           {routes.map(

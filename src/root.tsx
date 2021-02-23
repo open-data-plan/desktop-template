@@ -1,11 +1,11 @@
 import React, { useState, useEffect, FC } from 'react'
 import App from '@/app'
 import { ConfigProvider } from 'antd'
-import { createHashHistory } from 'history'
+import { createBrowserHistory } from 'history'
 import { Locale } from 'antd/lib/locale-provider'
 
 // history
-const history = createHashHistory()
+const history = createBrowserHistory()
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
