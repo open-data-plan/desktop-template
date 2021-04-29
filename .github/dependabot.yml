@@ -1,0 +1,23 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: core-js
+    versions:
+    - 3.10.2
+  - dependency-name: "@types/react"
+    versions:
+    - 17.0.1
+    - 17.0.2
+  - dependency-name: "@ant-design/icons"
+    versions:
+    - 4.5.0
+  - dependency-name: antd
+    versions:
+    - 4.12.1
+    - 4.12.2
