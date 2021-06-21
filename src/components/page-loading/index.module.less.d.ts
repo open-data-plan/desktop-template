@@ -1,5 +1,5 @@
 interface CSSModules {
-  loading: string;
+  loading: string
 }
-export const cssModules: CSSModules;
-export default cssModules;
+export const cssModules: CSSModules
+export default cssModules

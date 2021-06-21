@@ -29,6 +29,8 @@
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@opd/pangu": "^1.13.4",
     "@types/classnames": "^2.3.1",
     "@types/history": "^4.7.8",
@@ -39,11 +41,6 @@
     "@types/react-router": "^5.1.15",
     "@types/react-router-dom": "^5.1.7",
     "react-test-renderer": "^17.0.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -58,7 +55,8 @@
     "extends": "@opd/eslint-config-pangu"
   },
   "jest": {
-    "preset": "@opd/jest-preset-pangu"
+    "preset": "@opd/jest-preset-pangu",
+    "testEnvironment": "jsdom"
   },
   "browserslist": [
     "last 2 version",

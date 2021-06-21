@@ -12,7 +12,7 @@ interface Props extends MenuProps {
   routes?: RouteConfig[]
 }
 
-function getKeyByPath(path?: string | string[]) {
+function getKeyByPath(path?: string | readonly string[]) {
   return Array.isArray(path) ? path[0] : path
 }
 
@@ -27,20 +27,19 @@ function renderMenuItems(routes: RouteConfig[] = []): ReactNode[] {
         return visible
       })
       if (visible) {
-        const el = (
-          <>
-            {icon}
-            <span>{title}</span>
-          </>
-        )
+        const el = <span>{title}</span>
         if (visibleChildRoutes.length) {
           return (
-            <SubMenu key={key} title={el}>
+            <SubMenu key={key} title={el} icon={icon}>
               {renderMenuItems(visibleChildRoutes)}
             </SubMenu>
           )
         } else {
-          return <MenuItem key={key}>{el}</MenuItem>
+          return (
+            <MenuItem key={key} icon={icon}>
+              {el}
+            </MenuItem>
+          )
         }
       } else {
         return null

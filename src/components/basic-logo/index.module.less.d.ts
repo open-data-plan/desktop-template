@@ -1,7 +1,7 @@
 interface CSSModules {
-  appLogo: string;
-  appImg: string;
-  appName: string;
+  appLogo: string
+  appImg: string
+  appName: string
 }
-export const cssModules: CSSModules;
-export default cssModules;
+export const cssModules: CSSModules
+export default cssModules

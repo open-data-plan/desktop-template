@@ -1,9 +1,9 @@
 interface CSSModules {
-  mainLayout: string;
-  mainLayoutContent: string;
-  hasSider: string;
-  hasHeader: string;
-  noHeaderSider: string;
+  mainLayout: string
+  mainLayoutContent: string
+  hasSider: string
+  hasHeader: string
+  noHeaderSider: string
 }
-export const cssModules: CSSModules;
-export default cssModules;
+export const cssModules: CSSModules
+export default cssModules
