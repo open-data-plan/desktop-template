@@ -17,7 +17,7 @@
   "author": "kagawagao <kingsongao1221@gmail.com> (https://kingsongao.com/)",
   "license": "MIT",
   "dependencies": {
-    "@ant-design/icons": "^4.6.2",
+    "@ant-design/icons": "^4.6.3",
     "antd": "^4.16.11",
     "classnames": "^2.3.1",
     "core-js": "^3.16.1",
