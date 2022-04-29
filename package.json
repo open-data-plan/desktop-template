@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
-    "@commitlint/config-conventional": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.4",
     "@opd/pangu": "^1.13.8",
     "@types/classnames": "^2.3.1",
     "@types/history": "^5.0.0",
