@@ -38,7 +38,7 @@
     "@types/qs": "^6.9.7",
     "@types/react": "^18.0.20",
     "@types/react-dom": "^18.0.6",
-    "@types/react-router": "^5.1.18",
+    "@types/react-router": "^5.1.19",
     "@types/react-router-dom": "^5.3.3",
     "react-test-renderer": "^18.2.0"
   },
