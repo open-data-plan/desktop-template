@@ -29,7 +29,7 @@
     "react-router-dom": "^6.6.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.4.1",
+    "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
     "@opd/pangu": "^1.13.8",
     "@types/classnames": "^2.3.1",
