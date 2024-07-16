@@ -34,7 +34,7 @@
     "@opd/pangu": "^1.13.8",
     "@types/classnames": "^2.3.1",
     "@types/history": "^5.0.0",
-    "@types/lodash": "^4.17.6",
+    "@types/lodash": "^4.17.7",
     "@types/qs": "^6.9.15",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
