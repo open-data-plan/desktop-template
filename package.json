@@ -32,7 +32,7 @@
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "@opd/pangu": "^1.13.8",
-    "@types/classnames": "^2.3.1",
+    "@types/classnames": "^2.3.4",
     "@types/history": "^5.0.0",
     "@types/lodash": "^4.17.12",
     "@types/qs": "^6.9.16",
