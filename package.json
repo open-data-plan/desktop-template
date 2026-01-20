@@ -18,7 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "@ant-design/icons": "^6.1.0",
-    "antd": "^6.2.0",
+    "antd": "^6.2.1",
     "classnames": "^2.5.1",
     "core-js": "^3.47.0",
     "path-to-regexp": "^8.3.0",
